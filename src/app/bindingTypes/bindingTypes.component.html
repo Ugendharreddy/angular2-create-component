@@ -1,0 +1,9 @@
+
+<input type="text" 
+       [(ngModel)]='username'/>
+
+<p>{{ username }}</p>
+
+<button class='btn btn-primary' 
+    [disabled]='!checkingLength()'
+    (click)='clearUserName($event)'>Clear Text</button>
